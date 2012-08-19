@@ -1,9 +1,0 @@
-ORIG_PN="pkg-config"
-inherit ruby
-
-DESCRIPTION="Ruby bindings for the cairo graphics rendering library"
-HOMEPAGE="http://rubyforge.org/projects/cairo/"
-SRC_URI="mirror://rubyforge/cairo/${ORIG_PN}-${PV}.tgz"
-
-RDOC_SOURCE="lib"
-RDOC_MODULE="PKGConfig"

@@ -1,4 +1,0 @@
-category: Devel Ruby
-requires: pkg-config ruby
-sdesc: "Ruby pkg-config interface"
-ldesc: "A pkg-config implementation by Ruby."

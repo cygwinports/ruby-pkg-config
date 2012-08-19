@@ -1,0 +1,22 @@
+inherit ruby
+
+
+REQUIRES="pkg-config"
+
+RDOC_SOURCE="lib"
+RDOC_MODULE="PKGConfig"
+
+# ruby-builder has *way* too many dependencies just to install this
+src_compile() {
+	cd ${S}
+	rdoc -U --ri --op ${B}/.rdoc ${RDOC_SOURCE}
+}
+
+src_install() {
+	cd ${S}
+	doruby lib/pkg-config.rb
+	rubyinto pkg-config
+	doruby lib/pkg-config/version.rb
+	dodir ${RI_SITEDIR}
+	cp -r ${B}/.rdoc/${RDOC_MODULE} ${D}${RI_SITEDIR}/
+}
