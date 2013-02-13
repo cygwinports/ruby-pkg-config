@@ -1,0 +1,11 @@
+inherit rubygem
+
+NAME="ruby-pkg-config"
+VERSION=1.1.4
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby pkg-config interface"
+DESCRIPTION="pkg-config can be used in your extconf.rb to properly detect
+libraries needed for compiling Ruby native extensions."
+
+REQUIRES="pkg-config"

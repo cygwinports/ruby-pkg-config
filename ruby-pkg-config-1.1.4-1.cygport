@@ -1,4 +1,0 @@
-inherit rubygem
-
-
-REQUIRES="pkg-config"
