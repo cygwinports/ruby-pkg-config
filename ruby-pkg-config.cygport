@@ -8,6 +8,8 @@ SUMMARY="Ruby pkg-config interface"
 DESCRIPTION="pkg-config can be used in your extconf.rb to properly detect
 libraries needed for compiling Ruby native extensions."
 
+ARCH=noarch
+
 PKG_NAMES="${NAME} ${NAME}-doc"
 ruby_pkg_config_REQUIRES="pkg-config"
 ruby_pkg_config_CONTENTS=${RUBYGEM_INSTDIR#/}" "${RUBYGEM_SPEC#/}
