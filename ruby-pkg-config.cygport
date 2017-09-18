@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-pkg-config"
-VERSION=1.1.7
+VERSION=1.2.7
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby pkg-config interface"
